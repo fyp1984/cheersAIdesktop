@@ -236,4 +236,9 @@ scripts/stress-test/reports/
 # settings
 *.local.json
 *.local.md
+<<<<<<< Updated upstream
 *.pid
+=======
+api/.flask_dev.pid
+web/.next_dev.pid
+>>>>>>> Stashed changes
