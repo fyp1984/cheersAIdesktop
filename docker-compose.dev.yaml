@@ -28,7 +28,7 @@ services:
     restart: always
     command: redis-server --requirepass difyai123456
     ports:
-      - "6700:6379"
+      - "6379:6379"
     volumes:
       - redis_data:/data
     healthcheck:
@@ -81,9 +81,9 @@ services:
       DB_HOST: postgres
       DB_PORT: 5432
       DB_DATABASE: dify_plugin
-    ports:
-      - "5002:5002"
-      - "5003:5003"
+    #ports:
+    #  - "5002:5002"
+    #  - "5003:5003"
     volumes:
       - plugin_daemon_data:/app/storage
     depends_on:
